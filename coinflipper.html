@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	
+	<body>
+		<h1>Welcome to Coin Flipper</h1>
+		<br><br>
+		<button onclick="flip()">Flip</button>
+		<br><br>
+		<h3>Heads: </h3> <div id="heads">0</div>
+		<h3>Tails: </h3> <div id="tails">0</div>
+	</body>
+	
+	<script>
+		var random_number;
+		var heads=document.getElementById("heads");
+		var tails=document.getElementById("tails");
+		
+		function flip(){
+		
+		random_number=Math.round(Math.random());
+		
+			if(random_number==0){
+				alert("ITS A HEADS!");
+				heads.innerHTML=parseInt(heads.innerHTML)+1;
+			}
+			else{
+				alert("ITS A TAILS!");
+				tails.innerHTML=parseInt(tails.innerHTML)+1;
+			}
+				
+		}
+	</script>
+</html>
+
